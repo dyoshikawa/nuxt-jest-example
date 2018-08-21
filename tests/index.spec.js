@@ -1,10 +1,13 @@
 import { shallowMount } from "@vue/test-utils";
-import NewTodo from "@/components/NewTodo.vue";
+import NewTask from "@/components/NewTask.vue";
+import BootStrapVue from "bootstrap-vue";
+import Vue from "vue";
+Vue.use(BootStrapVue);
 
 describe("NewTodo.vue", () => {
   it("インプットタグをレンダリングする", () => {
-    const wrapper = shallowMount(NewTodo);
+    const wrapper = shallowMount(NewTask);
 
-    expect(wrapper.find("input.new").exists()).toBe(true);
+    expect(wrapper.find("div").exists()).toBe(true);
   });
 });
