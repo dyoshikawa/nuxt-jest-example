@@ -1,15 +1,16 @@
 <template>
   <b-container>
     Hello
+    <new-task />
   </b-container>
 </template>
 
 <script>
-import AppLogo from "~/components/AppLogo.vue";
+import NewTask from "~/components/NewTask.vue";
 
 export default {
   components: {
-    AppLogo: {}
+    NewTask
   }
 };
 </script>
