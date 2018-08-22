@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input
+    <b-input
       v-model="text"
     />
     <b-button
